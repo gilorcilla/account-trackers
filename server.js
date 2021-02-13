@@ -3,8 +3,11 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
-const PORT = 3000;
+//Heroku
 
+//const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+//const db = mongoose.connection.db;
 const app = express();
 
 app.use(logger("dev"));
@@ -15,9 +18,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+//Adding my db connection
+
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
 
 // routes
