@@ -2,6 +2,16 @@
 
 ## Table of Contents
 
+-[Description]
+
+-[Deployed Site]
+
+-[Installation]
+
+-[Usage]
+
+-[License]
+
 ## Description
 
 ## Deployed Site
@@ -11,3 +21,5 @@
 ## Usage
 
 ## License
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
