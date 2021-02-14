@@ -24,7 +24,9 @@
     "express": "^4.17.1",
     "life-server": "^7.0.1",
     "lite-server": "^2.5.3",
-    "mongoose": "^5.5.15",
-    "morgan": "^1.9.1"
+    "mongoose": "^5.11.16",
+    "morgan": "^1.9.1",
+    "node": "^15.8.0",
+    "webpack": "^5.21.2"
   }
 }

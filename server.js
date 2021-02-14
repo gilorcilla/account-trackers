@@ -27,10 +27,10 @@ mongoose.connect("mongodb://localhost/budget", {
   useUnifiedTopology: true,
 });
 
-db.on("Error on Mongo Connection", (error) => console.error(error));
-db.once("connected", () =>
-  console.log("Success! You are connected to Mongoose")
-);
+// db.on("Error on Mongo Connection", (error) => console.error(error));
+// db.once("connected", () =>
+//   console.log("Success! You are connected to Mongoose")
+// );
 
 // routes
 app.use(require("./routes/api.js"));
