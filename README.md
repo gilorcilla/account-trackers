@@ -22,7 +22,7 @@ account with our without connection.
 
 https://blooming-beyond-44302.herokuapp.com
 
-![Account Tracker](../public/icons/app.png)
+![Account Tracker](/public/icons/app.png)
 
 ## Installation
 
