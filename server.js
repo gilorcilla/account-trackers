@@ -19,13 +19,16 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //Adding my db connection
-
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/blooming-beyond-44302",
+  {
+    //mongoose.connect("mongodb://localhost/budget", {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+  }
+);
 
 // db.on("Error on Mongo Connection", (error) => console.error(error));
 // db.once("connected", () =>
